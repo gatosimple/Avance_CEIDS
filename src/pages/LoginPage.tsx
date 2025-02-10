@@ -1,4 +1,4 @@
-import './LoginPage.css';
+import './tailwind.css';
 
 const LoginPage = () => {
   return <div className="flex h-screen">
