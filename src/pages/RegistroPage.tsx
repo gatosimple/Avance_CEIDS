@@ -1,4 +1,12 @@
+import { useNavigate } from 'react-router-dom';
+
 const RegistroPage = () => {
+    const navigate = useNavigate();
+
+    const handleRedireccion = () => {
+        navigate('/');
+      };
+
     return (
         <div className="d-flex justify-content-center align-items-center bg-dark w-100 min-vh-100">
             <div className="card shadow col-lg-4 col-md-8 p-4">
@@ -81,6 +89,7 @@ const RegistroPage = () => {
                         type="submit" 
                         id="margen-superior-boton"
                         className="btn btn-warning w-100"
+                        onClick={handleRedireccion}
                     >
                         Registrar
                     </button>
